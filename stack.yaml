@@ -1,1 +1,5 @@
-resolver: nightly-2018-04-05
+resolver: lts-13.18
+
+extra-deps:
+- git: https://github.com/robbiemcmichael/github
+  commit: 90848831f7baef332d9d67d8bfc96662a2586676
