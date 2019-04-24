@@ -402,8 +402,17 @@ instance (Reflect x, Reflect xs) => Reflect (x ': xs) where
 instance Reflect 'WebhookWildcardEvent where
   reflect _ = WebhookWildcardEvent
 
+instance Reflect 'WebhookCheckRunEvent where
+  reflect _ = WebhookCheckRunEvent
+
+instance Reflect 'WebhookCheckSuiteEvent where
+  reflect _ = WebhookCheckSuiteEvent
+
 instance Reflect 'WebhookCommitCommentEvent where
   reflect _ = WebhookCommitCommentEvent
+
+instance Reflect 'WebhookContentReferenceEvent where
+  reflect _ = WebhookContentReferenceEvent
 
 instance Reflect 'WebhookCreateEvent where
   reflect _ = WebhookCreateEvent
@@ -411,17 +420,41 @@ instance Reflect 'WebhookCreateEvent where
 instance Reflect 'WebhookDeleteEvent where
   reflect _ = WebhookDeleteEvent
 
+instance Reflect 'WebhookDeployKeyEvent where
+  reflect _ = WebhookDeployKeyEvent
+
 instance Reflect 'WebhookDeploymentEvent where
   reflect _ = WebhookDeploymentEvent
 
 instance Reflect 'WebhookDeploymentStatusEvent where
   reflect _ = WebhookDeploymentStatusEvent
 
+instance Reflect 'WebhookDownloadEvent where
+  reflect _ = WebhookDownloadEvent
+
+instance Reflect 'WebhookFollowEvent where
+  reflect _ = WebhookFollowEvent
+
 instance Reflect 'WebhookForkEvent where
   reflect _ = WebhookForkEvent
 
+instance Reflect 'WebhookForkApplyEvent where
+  reflect _ = WebhookForkApplyEvent
+
+instance Reflect 'WebhookGitHubAppAuthorizationEvent where
+  reflect _ = WebhookGitHubAppAuthorizationEvent
+
+instance Reflect 'WebhookGistEvent where
+  reflect _ = WebhookGistEvent
+
 instance Reflect 'WebhookGollumEvent where
   reflect _ = WebhookGollumEvent
+
+instance Reflect 'WebhookInstallationEvent where
+  reflect _ = WebhookInstallationEvent
+
+instance Reflect 'WebhookInstallationRepositoriesEvent where
+  reflect _ = WebhookInstallationRepositoriesEvent
 
 instance Reflect 'WebhookIssueCommentEvent where
   reflect _ = WebhookIssueCommentEvent
@@ -429,8 +462,29 @@ instance Reflect 'WebhookIssueCommentEvent where
 instance Reflect 'WebhookIssuesEvent where
   reflect _ = WebhookIssuesEvent
 
+instance Reflect 'WebhookLabelEvent where
+  reflect _ = WebhookLabelEvent
+
+instance Reflect 'WebhookMarketplacePurchaseEvent where
+  reflect _ = WebhookMarketplacePurchaseEvent
+
 instance Reflect 'WebhookMemberEvent where
   reflect _ = WebhookMemberEvent
+
+instance Reflect 'WebhookMembershipEvent where
+  reflect _ = WebhookMembershipEvent
+
+instance Reflect 'WebhookMetaEvent where
+  reflect _ = WebhookMetaEvent
+
+instance Reflect 'WebhookMilestoneEvent where
+  reflect _ = WebhookMilestoneEvent
+
+instance Reflect 'WebhookOrganizationEvent where
+  reflect _ = WebhookOrganizationEvent
+
+instance Reflect 'WebhookOrgBlockEvent where
+  reflect _ = WebhookOrgBlockEvent
 
 instance Reflect 'WebhookPageBuildEvent where
   reflect _ = WebhookPageBuildEvent
@@ -438,14 +492,26 @@ instance Reflect 'WebhookPageBuildEvent where
 instance Reflect 'WebhookPingEvent where
   reflect _ = WebhookPingEvent
 
+instance Reflect 'WebhookProjectCardEvent where
+  reflect _ = WebhookProjectCardEvent
+
+instance Reflect 'WebhookProjectColumnEvent where
+  reflect _ = WebhookProjectColumnEvent
+
+instance Reflect 'WebhookProjectEvent where
+  reflect _ = WebhookProjectEvent
+
 instance Reflect 'WebhookPublicEvent where
   reflect _ = WebhookPublicEvent
 
-instance Reflect 'WebhookPullRequestReviewCommentEvent where
-  reflect _ = WebhookPullRequestReviewCommentEvent
-
 instance Reflect 'WebhookPullRequestEvent where
   reflect _ = WebhookPullRequestEvent
+
+instance Reflect 'WebhookPullRequestReviewEvent where
+  reflect _ = WebhookPullRequestReviewEvent
+
+instance Reflect 'WebhookPullRequestReviewCommentEvent where
+  reflect _ = WebhookPullRequestReviewCommentEvent
 
 instance Reflect 'WebhookPushEvent where
   reflect _ = WebhookPushEvent
@@ -453,8 +519,26 @@ instance Reflect 'WebhookPushEvent where
 instance Reflect 'WebhookReleaseEvent where
   reflect _ = WebhookReleaseEvent
 
+instance Reflect 'WebhookRepositoryEvent where
+  reflect _ = WebhookRepositoryEvent
+
+instance Reflect 'WebhookRepositoryImportEvent where
+  reflect _ = WebhookRepositoryImportEvent
+
+instance Reflect 'WebhookRepositoryVulnerabilityAlertEvent where
+  reflect _ = WebhookRepositoryVulnerabilityAlertEvent
+
+instance Reflect 'WebhookSecurityAdvisoryEvent where
+  reflect _ = WebhookSecurityAdvisoryEvent
+
+instance Reflect 'WebhookStarEvent where
+  reflect _ = WebhookStarEvent
+
 instance Reflect 'WebhookStatusEvent where
   reflect _ = WebhookStatusEvent
+
+instance Reflect 'WebhookTeamEvent where
+  reflect _ = WebhookTeamEvent
 
 instance Reflect 'WebhookTeamAddEvent where
   reflect _ = WebhookTeamAddEvent
